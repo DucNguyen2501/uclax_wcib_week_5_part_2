@@ -9,17 +9,54 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
   </head>
 
-  <body>
 
-    <h1>Week 5, Part 2</h1>
+  <body class="text-center">
+    <form class="form-signin">
+      <h1>Random Story Generator</h1>
+      <div>
+        <label for="customnameA">Enter 1st custom name:</label>
+        <input id="customnameA" class="form-control" type="text" placeholder="Type a name">
+      </div>
+      <div>
+          <label for="customnameB">Enter 2nd custom name:</label>
+          <input id="customnameB" class="form-control" type="text" placeholder="Type a name">
+        </div>
+      <div>
+         <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+         <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+       </div>
+      <div>
+         <button class="btn btn-lg btn-primary btn-block" type="submit">Generate random story</button>
+       </div>
+      <p class="story"></p>
+   </form>
+
+   <script src="js/scripts.js" defer></script>
 
 	</body>
 
