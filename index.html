@@ -38,23 +38,24 @@
   <body class="text-center">
     <main class="form-signin">
       <h1>Silly Story Generator</h1>
-        <section class="customsec">
-            <label for="inputfield">Enter 1st custom name:</label>
+        <div class="customsec">
+            <label for="customname1">Enter 1st custom name:</label>
             <input class="form-control" type="text" id="customname1" placeholder="Type a name">
-        </section>
-        <section class="customsec">
-            <label for="inputfield">Enter 2nd custom name:</label>
+        </div>
+        <div class="customsec">
+            <label for="customname2">Enter 2nd custom name:</label>
             <input class="form-control" type="text" id="customname2" placeholder="Type a name">
-        </section>
-
-        <div class="cityoption">
-            <label for="">US</label> <input type="radio" id="us" name="box-select"  class="radiocheck">
-            <label for="">UK</label> <input type="radio" id="uk" name="box-select" class="radiocheck">
         </div>
 
-        <button type="submit" class="btn btn-lg btn-primary btn-block randomize" id="jsstyle" onclick="display_random_image();">Generate random story</button>
+        <div class="cityoption">
+            <label for="us">US</label> <input type="radio" id="us" name="box-select"  class="radiocheck">
+            <label for="uk">UK</label> <input type="radio" id="uk" name="box-select" class="radiocheck">
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-primary btn-block randomize">Generate random story</button>
 
         <p class="story"></p>
+
     </main>
 
    <script src="js/scripts.js" defer></script>

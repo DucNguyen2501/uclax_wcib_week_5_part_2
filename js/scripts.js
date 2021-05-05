@@ -15,7 +15,6 @@ const customName2 = document.getElementById("customname2");
     let insertX = ["Willy Wolka","Micky Mouse","The president"];
     let insertY = ["the chocolate factory","Disneyland","the White House"];
     let insertZ = ["the chocolate fireworks start exploding","melted into a puddle on the sidewalk","all the nut crackers were walking away"];
-
     randomize.addEventListener('click', result);
 
     function result(){
@@ -29,26 +28,22 @@ const customName2 = document.getElementById("customname2");
         newStory = newStory.replace(/:insertz:/g, zItem);
 
 
-
         if (customName1.value !== ""){
-            let name = customName1.value;
+            const name = customName1.value;
             newStory = newStory.replace("Bob", name);
         }
 
         if (customName2.value !== ""){
-            let name = customName2.value;
+            const name = customName2.value;
             newStory = newStory.replace("Mary", name);
         }
 
         if (document.getElementById("uk").checked){
-            let weight = Math.round(300 / 14) + " stones";
-            let temperature = Math.round((94 - 32) * 5 / 9) + " celcius";
+            const weight = Math.round(300 / 14) + " stones";
+            const temperature = Math.round((94 - 32) * 5 / 9) + " celcius";
             newStory = newStory.replace(94, temperature);
             newStory = newStory.replace(300, weight);
 
-
-        }else{
-          document.getElementById("us").checked = true;
         }
 
         story.textContent = newStory;
